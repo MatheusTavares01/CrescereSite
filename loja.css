@@ -1,0 +1,204 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(161, 163, 172);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c40f0f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #8D6F22;
+    transition: 0.3s all;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+    
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color:#8D6F22 ;
+        transition: 0.3s all;
+    }
+
+    .main-container {
+        display: flex;
+    }
+    
+    .sidebar {
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+        border-right: 1px solid #ddd;
+    }
+    
+    .sidebar h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .brand-filter {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .brand:hover {
+        background-color: #f0f0f0;
+    }
+    
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .container {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .product {
+        
+        background-color: #fff;
+        border: 3px solid #856e0a;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product h2 {
+        
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    
+    .product p {
+        
+        font-size: 1.5em;
+       
+    }
+
+/* Estilos gerais do footer */
+.custom-footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Para posicionamento absoluto dos ícones de rede social */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+    
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}

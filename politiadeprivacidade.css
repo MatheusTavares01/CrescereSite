@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(161, 163, 172);
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c40f0f;
+    color: white;
+    padding: 32px 0;
+    text-align: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #9e781a;
+    transition: 0.3s all;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+    
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color:#8D6F22 ;
+        transition: 0.3s all;
+    }
+
+
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav ul li {
+    margin: 0 10px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #bc7218;
+}
+
+#passar-btn {
+    border: 2px solid #816528;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#passar-btn:hover {
+    background-color: #8d6f22;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.item .car-img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.item .car-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.item h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.item .description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.item .information {
+    margin-top: 20px;
+}
+
+.item .information a {
+    padding: 10px 20px;
+    border: 2px solid #8d6f22;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #8d6f22;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.item .information a:hover {
+    background-color: #8d6f22;
+    color: white;
+}
+
+.arrows {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.arrows button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.arrows button img {
+    width: 33px;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    background-color: #f6b30a;
+}
+
+
+/* Estilos gerais do footer */
+.custom-footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Para posicionamento absoluto dos ícones de rede social */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+    
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}

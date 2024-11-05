@@ -1,0 +1,465 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(161, 163, 172);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c40f0f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #9e781a;
+    transition: 0.3s all;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+    
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color:#8D6F22 ;
+        transition: 0.3s all;
+    }
+
+section{
+    
+    height: 100vh;
+    position:relative;
+
+     & .list {
+            width: 70vw;
+            margin: auto;
+            height: 100%;
+            position: relative;
+
+        & .item{
+            position: absolute;
+            inset: 0;
+
+
+            & .car-img {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%) ;
+                width: 70%;
+
+                & img{
+                    width: 100%;
+                    transform: rotate(10deg);
+
+                }
+                    
+            }
+
+            & .content {
+                position: absolute;
+                right: 100px;
+                width: 70% ;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transform: translateX(250px);
+                align-items: end;
+                gap: 20px;
+
+                & .car-information
+                font-weight: bold;
+                
+                
+
+            }
+
+        }
+
+        & h2.NomeMarca1{
+            font-size: 6em;
+            line-height: 1em;
+            g
+            
+
+        }
+         h2.NomeMarca2{
+            font-size: 6em;
+            line-height: 1em;
+            color :#831e1e;
+            
+        }
+        & h2.NomeMarca3{
+            font-size: 6em;
+            line-height: 1em;
+        
+            color:#539ccf;
+
+        }
+        & h2.NomeMarca4{
+            font-size: 6em;
+            line-height: 1em;
+        
+            color:#dda627;
+
+        }
+        & h2.NomeMarca5{
+            font-size: 6em;
+            line-height: 1em;
+        
+            color:#ded4d4;
+
+        }
+            & .description{
+
+                color: aliceblue;
+                font-size: 25px;
+                text-align: right;
+                max-width: 400px;
+                
+            }
+            & .information{
+                border-radius: 30px;
+                height: 35px;
+                width: 120px;
+                text-transform: uppercase;
+                border: 2px solid #8D6F22;
+                background-color: grey;
+                color: red;
+                cursor: pointer;
+                font-weight: bold;
+
+                & .PgButton {
+                    color: red;
+                }
+
+            }
+        } 
+          
+    }
+
+
+
+.arrows{
+
+    width: 65vw;
+    position: absolute;
+    transform: translatey(-395px);
+    display: flex;
+    justify-content: space-between;
+    
+    & button:nth-child(1){   
+               & img {
+                transform: scale(-1);
+                
+               }
+
+        
+    }
+
+
+    & button{   
+             top: 60%;
+             width: 50px;
+             height: 50px;
+             border-radius: 50%;
+             cursor: pointer;
+             border: none;
+             transform: translateY(2px);
+        & img{
+            width: 33px;
+            cursor: pointer;
+        }
+        &:hover{
+            background-color: #f6b30a;
+        }
+    }
+}
+        .indicators{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) ;
+            height: 200px;
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap:15px ;
+        
+
+        & .number{
+            font-size: 5em;
+        }
+
+        & .ul{
+            display: flex;
+            gap: 10px;
+            
+
+           & li{
+                width: 50px;
+                height: 50px;
+                background-color: yellow;
+                border-radius: 5px;
+                transition: 0.5s;
+            
+            }
+            & .active{
+                background-color: antiquewhite;
+            }
+        }
+    }
+}
+
+
+#passar-btn{
+    border: 2px solid rgb(129, 101, 40);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#passar-btn:hover{
+   background-color: #8D6F22;
+   color: white;}
+
+ section {
+    
+    
+    & .list{
+
+        & .item{
+                transform: translateX(100vw);
+                transition: 0.5s;
+                opacity: 0;
+
+
+
+
+            & car-img{
+                & img{
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.3;
+                }
+            }
+
+
+            & .content{
+
+
+                & .car-information, h2,.description, description, .information {
+                    transform: translateX(100px);
+                    transition: 0.7s;
+                    transition-delay:0.3s;
+                    opacity: 0;
+                }
+
+                & h2{
+                    transition-delay: 0.3s;
+                }
+                & .description{
+                    transition-delay: 0.7s;
+                }
+                & .information{
+                    transition-delay: 0.9s;
+                }
+            }
+        }
+
+            & .active {
+                transform: translateX(0);
+                transition: 0.5s;
+                opacity: 1;
+
+                & .content{
+
+
+                    & .car-information,
+                     h2,
+                      .description,
+                         .information {
+                        transform: translateX(0px);
+                        opacity: 1;
+                        
+                    }
+                }
+
+                    & car-img{
+                        & img{
+                            transform: rotate(-20deg);
+                            
+                        }
+                    }
+        
+
+    }
+ }
+}
+.brand-logo {
+    width: 250px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin-right: 10px; /* Adicione um espaçamento à direita para separar a imagem do texto */
+}
+.brand-logo2{
+    width: 150px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin-top: 35px;
+    margin-right: 30px; /* Adicione um espaçamento à direita para separar a imagem do texto */
+}
+.brand-logo3{
+    width: 150px; /* Defina a largura desejada */
+    height: auto; /* Mantenha a proporção da imagem */
+    margin-top: 5px;
+    margin-right: -38px; /* Adicione um espaçamento à direita para separar a imagem do texto */
+}
+
+
+
+.marketplace {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px;
+
+
+.item {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.item .item-name {
+    padding: 10px;
+    background: linear-gradient(45deg, #ff4500, #d4af37);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    text-transform: uppercase;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}}
+
+
+
+/* Estilos gerais do footer */
+.custom-footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Para posicionamento absoluto dos ícones de rede social */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+    
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}

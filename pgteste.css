@@ -1,0 +1,75 @@
+body {
+    background-color: aqua;
+}
+
+header{
+    background-color: brown;
+
+}
+h1{
+    color: aliceblue;
+    text-align: right;
+    display: list-item;
+}
+img{
+    width: 150px;
+    height: 300px;
+    
+}
+/* Estilos gerais do footer */
+.custom-footer {
+    background-color: #000000;
+    color: white;
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Para posicionamento absoluto dos ícones de rede social */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="loja.css">
+</head>
+<header>
+    <div id="title">
+        <a href="index.html">
+            <div class="imgaem-LOGOINICIO">
+                <img src="img/logoCrescere.PNG" alt="">
+            </div>
+    </div>
+    <div class="inicio2">
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="blindagem.html"><li>Blindagem</li></a>
+            <a href="contato.html"><li>Contato</li></a>
+            <a href="loja.html" id="passar-btn"><li>Loja</li></a>  
+        </ul>
+    </div>
+</header>
+<body>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>Filtrar por Marca</h2>
+            
+                <div class="brand-filter">
+                    <div class="brand" onclick="filterByBrand('marca2')">
+                    <img src="img/ferrari-ges.svg" alt="Marca 2">
+                    <span>Ferrari</span>
+                </div>
+                <div class="brand" onclick="filterByBrand('marca3')">
+                    <img src="img/porsche-vector-logo.svg" alt="Marca 3">
+                    <span>Porshe</span>
+                </div>
+                <div class="brand" onclick="filterByBrand('marca4')">
+                    <img src="img/BMW.png" alt="Marca 4">
+                    <span>bmw</span>
+                </div>
+                  <div class="brand" onclick="filterByBrand('marca6')">
+                    <img src="img/bugatti.png" alt="Marca 6">
+                    <span>buggati</span>
+                </div>  <div class="brand" onclick="filterByBrand('marca7')">
+                    <img src="img/=meca.jfif.png" alt="Marca 7">
+                    <span>Mercedez-Benz</span>
+                </div>  <div class="brand" onclick="filterByBrand('marca8')">
+                    <img src="img/aston martin.png" alt="Marca 8">
+                    <span>aston martin</span>
+                </div><div class="brand" onclick="filterByBrand('marca9')">
+                    <img src="img/lanborghini.png" alt="Marca 9">
+                    <span>lanborghini</span>
+                </div>
+
+                <!-- Outras marcas aqui -->
+            </div>
+        </aside>
+        <div class="container">
+        
+            <div class="product marca3" onclick="redirectToPage('teste.html')">
+                <img src="img/Porshe1.jpg" alt="Produto 1">
+                <h2>Porshe911</h2>
+                <p>R$ 1.400.000,00</p>
+            </div>
+            <div class="product marca2" onclick="redirectToPage('PgFerrari1.html')">
+                <img src="img/ferrariLucas2.png" alt="Produto 2">
+                <h2>Ferrari 599X</h2>
+                <p>R$ 5.800,00</p>
+            </div>
+            <div class="product  marca8" onclick="redirectToPage('PgAstonmartin.html')">
+                <img src="img/aston_martin_valhalla sem fundo.png" alt="Produto 3">
+                <h2>Aston martin valhalla</h2>
+                <p>R$ 17.000.000</p>
+            </div>
+            <div class="product marca4" onclick="redirectToPage('PgBmwI8.html')">
+                <img src="img/bmw-i8.webp" alt="Produto 4">
+                <h2>Bmw i8</h2>
+                <p>R$ 1.149.990</p>
+            </div>
+            <div class="product marca4" onclick="redirectToPage('PgBmwM3.html')">
+                <img src="img/BMW-M3-Competition sem fundo.png" alt="Produto 4">
+                <h2>BMW M3</h2>
+                <p>R$ 829.950</p>
+            </div>
+            <div class="product marca9" onclick="redirectToPage('PgLamborguini.html')">
+                <img src="img/urus frente lateral.webp" alt="Produto 2">
+                <h2>LAMBORGHINI URUS</h2>
+                <p>R$ 3.200.000
+                </p>
+            </div>
+            <div class="product marca7" onclick="redirectToPage('PgMercedesG63.html')">
+                <img src="img/g63 modelo.png" alt="Produto 3">
+                <h2>Mercedes G63</h2>
+                <p>R$ 4.500.000 </p>
+            </div>
+            <div class="product marca7" onclick="redirectToPage('PgMercedesAmgGt.html')">
+                <img src="img/mec gt modelo.png" alt="Produto 7">
+                <h2>MERCEDES AMG GT</h2>
+                <p>R$  4.990.000</p>
+            </div>
+          
+            <!-- Outros produtos aqui -->
+        </div>
+    </div>
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <p>&copy;Crescere projetos.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-links">
+            <a href="https://www.google.com.br/maps/place/Universidade+São+Judas+-+Unidade+Santana/@-23.4971507,-46.6256876,17z/data=!3m1!4b1!4m6!3m5!1s0x94cef74c1baa478d:0x6432a2e5cac40528!8m2!3d-23.4971507!4d-46.6256876!16s%2Fg%2F11h23zkf7t?entry=ttu" target="_blank"><img src="img/pino-de-localizacao.png" alt="Link para rede social"></a>
+            <a href="url_do_Watz" target="_blank"><img src="img/whatsapp.png" alt="Link para rede social"></a>
+            <a href="https://www.instagram.com/crescereprojetos/" target="_blank"><img src="img/instagram.png" alt="Link para rede social"></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<script src="loja.js"></script>
+</body>
+</html>

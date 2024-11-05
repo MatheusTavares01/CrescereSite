@@ -1,0 +1,276 @@
+
+
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#vehicle-name {
+    display: flex;
+    align-items: center;
+}
+
+#vehicle-name h2 {
+    font-size: 1.8em;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#vehicle-price {
+    font-size: 1.5em;
+    color: #d4af37; /* Destacando o preço com uma cor diferente */
+}
+
+/* Restante do código permanece o mesmo */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(34, 34, 34);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #831e1e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #8D6F22;
+    transition: 0.3s all;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+
+
+.brand-logo {
+    transform: translate(580px, -27%)   
+     
+}
+
+
+
+
+.imgzap{
+    justify-content: left;
+    width:   75px; 
+    height:  75px;
+}
+
+
+.item {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+}
+
+.item .item-name {
+    padding: 10px;
+    background: linear-gradient(45deg, #ff4500, #d4af37);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    text-transform: uppercase;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 580px;
+}
+
+.carousellanbo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.carousellanbo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+ .brand-logolanbo {
+     
+   height: 5px;
+   width: 5px;
+
+}
+
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.vehicle-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #8D6F22; /* Adicionando a borda */
+
+}
+
+.vehicle-info h2 {
+    transform: translateY(-195px);
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px ;
+
+
+}
+ .oioi h2{
+    color: #d49c0e;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 1ch;
+    border: 4px solid #a41b1b; /* Adicionando a borda */
+    max-width: 450px;
+       
+ }
+
+.vehicle-info p {
+    transform: translateY(-180px);
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-logoferrari {
+    transform: translate(50px,14%) ;  
+    width: 175px;
+     
+}
+
+/* Estilos gerais do footer */
+.custom-footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Para posicionamento absoluto dos ícones de rede social */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+    
+}
+
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}

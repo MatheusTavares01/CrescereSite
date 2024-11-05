@@ -1,0 +1,241 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(161, 163, 172);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #c40f0f;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #8D6F22;
+    transition: 0.3s all;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+    
+    a{
+        color: white;
+    }
+    
+    a:hover{
+        color:#8D6F22 ;
+        transition: 0.3s all;
+    }
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #444;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+    background-color: #ccc;
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.text-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.text-section li {
+    margin-bottom: 10px;
+}
+
+.image-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.image-section img {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-section img:last-child {
+    margin-bottom: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content, .caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.custom-footer {
+    background-color: #000000;
+    color: white;
+    padding: 38px 0;
+    text-align: center;
+    position: relative; /* Necessário para posicionar os ícones de redes sociais */
+}
+
+.custom-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo do footer */
+}
+
+.custom-footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.custom-footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center; /* Centraliza o texto dentro da lista */
+}
+
+.custom-footer .footer-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.custom-footer .footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.custom-footer .footer-nav ul li a:hover {
+    color: #bc7218;
+}
+
+/* Estilos para os ícones de redes sociais na lateral */
+.social-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    height: 30px; /* Ajuste conforme necessário */
+    width: auto;
+}
